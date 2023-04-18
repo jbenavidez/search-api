@@ -22,4 +22,4 @@ lint:
 	flake8
 
 test_api:
-	py.test
+	pytest

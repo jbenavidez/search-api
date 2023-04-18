@@ -23,3 +23,28 @@ def test_Search_only_q(db, django_db_setup):
     data = res.json()
     assert isinstance(data['data'], list)
     assert 200==  res.status_code
+
+def test_check_keys(db, django_db_setup):
+    """this test is to test if the search endpoint return a valid list of dicts"""
+    # Arrange
+    test_obj ={
+                'id': 60,
+                'first_name': 'Tomlin',
+                'last_name': 'Freddi',
+                'sex': 'Female',
+                'birth_date': '1939-06-17',
+                'rating': 7.1,
+                'primary_skills': "['Mathematics', 'Code Refactoring']",
+                'secondary_skill': "['Secure Code Review', ]",
+                'company': 'Mann, Stokes and Christiansen',
+                'returned_count': 0,
+                'active': False,
+                'country': 'United States',
+                'language': 'Bengali'
+            }
+    res = client.get('/api/search?q=Mathematics')
+    # Act
+    data = res.json()
+    s1 = test_obj.keys()
+    s2 = data['data'][0].keys()
+    assert len(set(s2).difference(s1)) == 0
