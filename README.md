@@ -53,7 +53,7 @@ $  make django_migrations
 $ make plant_seed
 ```
 
-<p>Init local server</p>
+<p>Init local server. http://127.0.0.1:8000/</p>
 
 ```bash
 $ make run
@@ -70,3 +70,5 @@ $ make run
 <p>include: <b>Optional</b> --> include only object matching  the given term </p>
 <p>exclude: <b>Optional</b>  to exclude objects from response </p>
 <p>is_active: <b>Optional</b> --> true | false</p>
+
+####  Sample response on Postman:
