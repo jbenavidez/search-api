@@ -66,4 +66,7 @@ $ make run
 
 
 ####  API Params:
-
+<p>q: <b>Required</b> </p>
+<p>include: <b>Optional</b> -->single term </p>
+<p>exclude: <b>Optional</b> -->single term </p>
+<p>is_active: <b>Optional</b> --> true | false</p>
