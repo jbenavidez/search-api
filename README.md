@@ -32,7 +32,7 @@ $ make init
 <p>  Create VirtualEnv</p>
 
 ```bash
-$ dsource env/bin/activate
+$ source env/bin/activate
 ```
 
 <p>  Install Depencies</p>
@@ -41,6 +41,23 @@ $ dsource env/bin/activate
 $ pip3 install -r requirements.txt
 ```
 
+<p>  Django migration</p>
+
+```bash
+$  make django_migrations
+```
+
+<p>Plant The Seed</p>
+
+```bash
+$ make plant_seed
+```
+
+<p>Init local server</p>
+
+```bash
+$ make run
+```
 
 ####  API end-points:
 <ul>
