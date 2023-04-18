@@ -74,6 +74,6 @@ $ make run
 ### Sample response on Postman:
 
 ####  Params:
-q: Mathematics
-include: Gutmann LLC
+<p>q: Mathematics</p>
+<p>include: Gutmann LLC</p>
 ![Alt text](/git_image/p1.png "test locally" )
