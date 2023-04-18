@@ -71,9 +71,12 @@ $ make run
 <p>exclude: <b>Optional</b>  to exclude objects from response </p>
 <p>is_active: <b>Optional</b> --> true | false</p>
 
+
+
+
 ### Sample response on Postman:
 
 ####  Params:
 <p>q: Mathematics</p>
-<p>include: Gutmann LLC</p>
-![Alt text](/git_image/p1.png "test locally" )
+<p>Include: Gutmann LLC</p>
+![Alt text](/git_images/p1.png "test locally" )
