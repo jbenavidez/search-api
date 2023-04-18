@@ -38,7 +38,7 @@ $ source env/bin/activate
 <p>  Install depencies</p>
 
 ```bash
-$ pip3 install -r requirements.txt
+$  make install_devs
 ```
 
 <p>  Django migration</p>
