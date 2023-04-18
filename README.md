@@ -20,21 +20,26 @@ light-weight service for sorting, ranking, and displaying a list of skilled serv
 
 
  
-</ul>
+ 
 ## Installation
-<p> install 1</p>
+<p> Create VirtualEnv</p>
 
 ```bash
-$ docker-compose -f docker-compose-dev.yml  Up
+$ make init
 ```
  
  
-<p> install 1</p>
+<p>  Create VirtualEnv</p>
 
 ```bash
-$ docker-compose -f docker-compose-dev.yml  Up
+$ dsource env/bin/activate
 ```
- 
+
+<p>  Install Depencies</p>
+
+```bash
+$ pip3 install -r requirements.txt
+```
 
 
 ####  API end-points:
