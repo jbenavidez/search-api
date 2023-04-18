@@ -114,7 +114,7 @@ class Provider(models.Model):
         """Convert entity to provider"""
         provider_id = provider.provider_id
         # update returned count
-        # cls.update_returned_count(provider_id)
+        cls.update_returned_count(provider_id)
         return {
             'id': provider_id,
             'first_name': provider.first_name,
