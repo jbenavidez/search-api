@@ -76,4 +76,4 @@ $ make run
 ####  Params:
 q: Mathematics
 include: Gutmann LLC
-![Alt text](/git_image/p3.png "test locally" )
+![Alt text](/git_image/p1.png "test locally" )
