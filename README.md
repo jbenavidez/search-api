@@ -19,15 +19,14 @@ light-weight service for sorting, ranking, and displaying a list of skilled serv
 </ul>
 
 
-
- being used to package the front-end, back-end,nginx  into containers </li>
+ 
 </ul>
-## Dev Enviroment- <b style='color:red'>Run the followings commands  to start the dev-environment</b>
+## Installation
 <ul>
 <li>
- 
+ <p>create virtualenv<p>
 ```bash
-$ docker-compose -f docker-compose-dev.yml  build
+$ make init
 ```
 </li>
 <li>
