@@ -78,6 +78,7 @@ class Provider(models.Model):
             res = res.filter(*include_conditions)
         # exclude terms
         if exclude is not None:
+            print("hello_from_exluce", exclude)
             exclude_conditions = cls.get_conditions(exclude)
             res = res.exclude(*exclude_conditions)
         return [cls.entity_to_provider(provider) for provider in res]

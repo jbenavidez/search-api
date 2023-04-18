@@ -9,8 +9,8 @@ class SearchService:
     def search(cls, params: Dict) -> List[Dict]:
         """Search for providers"""
         q = params.get("q")
-        includes = params.get("includes")
-        excludes = params.get("excludes")
+        include = params.get("include")
+        exclude = params.get("exclude")
         is_active = params.get("is_active")
         active_contition = [
             is_active is not None,
@@ -19,4 +19,4 @@ class SearchService:
         # set active flag
         if all(active_contition):
             is_active = True if is_active == "true" else False
-        return Provider.search(q, includes, excludes, is_active)
+        return Provider.search(q, include, exclude, is_active)

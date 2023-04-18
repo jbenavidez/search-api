@@ -15,7 +15,7 @@ def django_db_setup(django_db_setup, django_db_blocker):
         call_command('seed')
 
  
-def test_Search_only_q(db, django_db_setup):
+def test_search_only_q(db, django_db_setup):
     """this test is to test if the search endpoint returns 200 and the data is correct"""
     # Arrange
     res = client.get('/api/search?q=Mathematics')
@@ -23,6 +23,17 @@ def test_Search_only_q(db, django_db_setup):
     data = res.json()
     assert isinstance(data['data'], list)
     assert 200==  res.status_code
+
+def test_search_q_plus_include(db, django_db_setup):
+    """this test is to test if search endpoint return only data with include keyword"""
+
+    # Arrange
+    res = client.get('/api/search?include=Gutmann%20LLC&q=Mathematics')
+    # Act
+    data = res.json()
+    # Assert
+    assert data['data'][0]['company'] == 'Gutmann LLC'
+
 
 def test_check_keys(db, django_db_setup):
     """this test is to test if the search endpoint return a valid list of dicts"""
