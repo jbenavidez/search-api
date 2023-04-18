@@ -66,7 +66,7 @@ $ make run
 
 
 ####  API Params:
-<p>q: <b>Required</b> </p>
-<p>include: <b>Optional</b> -->single term </p>
-<p>exclude: <b>Optional</b> -->single term </p>
-<p>is_active: <b>Optional</b> --> true | false</p>
+<p>`q`: <b>Required</b> -- </p>
+<p>`include`: <b>Optional</b> --> include only object matching  the given term </p>
+<p>`exclude`: <b>Optional</b>  to exclude objects from response </p>
+<p>`is_active`: <b>Optional</b> --> true | false</p>
