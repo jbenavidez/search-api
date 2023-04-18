@@ -66,9 +66,14 @@ $ make run
 
 
 ####  API Params:
-<p>q: <b>Required</b> -- </p>
+<p>q: <b>Required</b> ex: "Mathematics" </p>
 <p>include: <b>Optional</b> --> include only object matching  the given term </p>
 <p>exclude: <b>Optional</b>  to exclude objects from response </p>
 <p>is_active: <b>Optional</b> --> true | false</p>
 
-####  Sample response on Postman:
+### Sample response on Postman:
+
+####  Params:
+q: Mathematics
+include: Gutmann LLC
+![Alt text](/git_image/p3.png "test locally" )
