@@ -24,9 +24,10 @@ light-weight service for sorting, ranking, and displaying a list of skilled serv
 ## Installation
 <ul>
 <li>
- <p>create virtualenv<p>
+<li>
+ 
 ```bash
-$ make init
+$ docker-compose -f docker-compose-dev.yml  Up
 ```
 </li>
 <li>
