@@ -29,13 +29,13 @@ $ make init
 ```
  
  
-<p>  Create VirtualEnv</p>
+<p>  Create virtual-env</p>
 
 ```bash
 $ source env/bin/activate
 ```
 
-<p>  Install Depencies</p>
+<p>  Install depencies</p>
 
 ```bash
 $ pip3 install -r requirements.txt
@@ -47,7 +47,7 @@ $ pip3 install -r requirements.txt
 $  make django_migrations
 ```
 
-<p>Plant The Seed</p>
+<p>Plant the seed</p>
 
 ```bash
 $ make plant_seed
