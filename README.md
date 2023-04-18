@@ -22,23 +22,18 @@ light-weight service for sorting, ranking, and displaying a list of skilled serv
  
 </ul>
 ## Installation
-<ul>
-<li>
-<p>creatre virtal env</p> 
+<p> install 1</p>
+
 ```bash
 $ docker-compose -f docker-compose-dev.yml  Up
 ```
-</li>
-<li>
  
+ 
+<p> install 1</p>
+
 ```bash
 $ docker-compose -f docker-compose-dev.yml  Up
 ```
-</li>
-</ul>
-
- 
-
  
 
 
