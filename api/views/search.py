@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from api.services import UtilityService
 from api.services import SearchService
 import logging
+import json
 
 
 logger = logging.getLogger(__name__)
@@ -21,7 +22,8 @@ def search_api(request):
                     UtilityService.generate_response(400, 'fail', err),
                     status=400)
         response = UtilityService.generate_response(200, 'success')
-        response['data'] = SearchService.search(received_data)
+        response['data'] = SearchService.\
+            search(json.loads(json.dumps(received_data)))
         return JsonResponse(response, status=200)
 
     except Exception as e:

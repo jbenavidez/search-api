@@ -4,8 +4,9 @@ from api.models import Provider
 
 class SearchService:
     """Search implementation"""
+
     @classmethod
-    def search(cls, params: any) -> List[Dict]:
+    def search(cls, params: Dict) -> List[Dict]:
         """Search for providers"""
         q = params.get("q")
         includes = params.get("includes")
