@@ -29,7 +29,7 @@ $ make init
 ```
  
  
-<p>  Create virtual-env</p>
+<p>  Active env</p>
 
 ```bash
 $ source env/bin/activate
